@@ -23,7 +23,10 @@ p
     margin-left: auto;
     margin-right: auto;
 }
-
+.shop-image:hover
+{
+    transform: scale(1.5);
+}
 
 a
 {
