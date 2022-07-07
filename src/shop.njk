@@ -5,14 +5,15 @@ layout: "base.njk"
 
 ---
 
-
-
-<h2> item name</h2>
-<p> item price</p>
-
 {% for product in collections.product %}
-    <h2> {{ product.data.name }}</h2>
-    <p>  {{ product.data.price }}</p>
+    <a href="{{ product.url }}">
+        <h2> {{ product.data.name }}</h2>
+    </a>
+    <a href="{{ product.url }}">
+        <img  src="{{product.data.image}}" alt="alt" class="shop-image"> 
+    </a>
+    <p>  {{ product.data.price }}$</p>
 {% endfor %}
-
-<a href="../index.html">go to home</a>
+    <div>
+        <a href="../index.html">go to home</a>
+    </div>
